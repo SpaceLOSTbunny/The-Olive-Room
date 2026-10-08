@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Reservation enquiry form for The Olive Rooms."><title>Reservations | The Olive Rooms</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"></head>
+<body><div class="cursor-glow" aria-hidden="true"></div><div class="ambient" aria-hidden="true"></div>
+<header class="navbar"><a class="brand" href="index.html"><img class="brand-logo" src="assets/images/logo.png" alt="The Olive Rooms logo"><span class="brand-text"><small>THE</small> OLIVE ROOMS <em>RESORT & RETREAT</em></span></a><nav class="nav-links" id="navLinks" aria-label="Main navigation"><a href="index.html">Home</a><a href="services.html">Services</a><a href="blog.html">Journal</a><a href="contact.html">Contact</a><a class="nav-panel-cta" href="reservations.html">Reserve your stay</a></nav><div class="nav-tools"><a class="nav-cta active" href="reservations.html">Reserve</a>
+      <button class="theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false">
+        <span class="theme-toggle-icon" aria-hidden="true">☼</span>
+        <span class="theme-toggle-label">Light</span>
+      </button>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div></header>
+<main>
+<section class="reservation-hero"><div class="hero-content reveal"><p class="eyebrow">PRIVATE RESERVATION ENQUIRY</p><h1>Reserve your <i>time away.</i></h1><p class="hero-text">Complete the form below. Once connected to Google Sheets, every enquiry will appear in your reservation sheet automatically.</p></div></section>
+<section class="section reservation-section"><div class="reservation-layout"><aside class="reservation-aside reveal"><p class="eyebrow">WHAT HAPPENS NEXT</p><h2>A simple enquiry.<br><i>A thoughtful reply.</i></h2><div class="steps"><div><span>01</span><p>Send your dates, contact details and preferences.</p></div><div><span>02</span><p>Your enquiry is recorded in your Google Sheet.</p></div><div><span>03</span><p>Your team confirms availability directly with the guest.</p></div></div><p class="reservation-note">Optional document uploads are saved to Google Drive and the file link is recorded in the sheet.</p></aside>
+<form class="reservation-form reveal" id="reservationForm" novalidate>
+<div class="form-row"><label>Full name<input required name="name" id="resName" autocomplete="name" placeholder="Your full name"></label><label>Phone<input required name="phone" id="resPhone" autocomplete="tel" placeholder="+91"></label></div>
+<div class="form-row"><label>Email<input required type="email" name="email" id="resEmail" autocomplete="email" placeholder="you@example.com"></label><label>Guests<input required type="number" min="1" max="20" name="guests" id="resGuests" value="2"></label></div>
+<div class="form-row"><label>Check-in<input required type="date" name="checkIn" id="checkIn"></label><label>Check-out<input required type="date" name="checkOut" id="checkOut"></label></div>
+<div class="form-row"><label>Reservation type<select required name="service" id="resService"><option value="">Choose an option</option><option>Rooms & Suites</option><option>Spa & Wellness</option><option>Fine Dining</option><option>Infinity Pool</option><option>Weddings & Events</option><option>Guided Excursions</option><option>Airport Transfer</option><option>Private Dinners</option></select></label><label>Preferred room / package<input name="room" id="resRoom" placeholder="Optional"></label></div>
+<label>Special request<textarea name="message" id="resMessage" rows="5" placeholder="Tell us anything we should know..."></textarea></label>
+<label class="file-label">Reservation document <span>(optional)</span><input type="file" name="document" id="resDocument" accept=".pdf,.jpg,.jpeg,.png,.webp"></label>
+<label class="consent"><input type="checkbox" required name="consent" id="resConsent"><span>I agree that The Olive Rooms may use the information submitted here to respond to this reservation enquiry.</span></label>
+<button type="submit" class="btn btn-gold">Send reservation enquiry</button><p class="form-status" id="reservationStatus" role="status"></p>
+</form></div></section></main>
+<footer class="footer"><div class="footer-brand"><img class="footer-logo" src="assets/images/logo.png" alt="The Olive Rooms logo"><p>A refined resort experience.</p></div><div class="footer-links"><a href="index.html">Home</a><a href="services.html">Services</a><a href="blog.html">Journal</a><a href="contact.html">Contact</a></div><p>© <span class="year"></span> The Olive Rooms</p></footer>
+
+<button class="scroll-top" type="button" aria-label="Scroll to top" aria-hidden="true"><span aria-hidden="true">↑</span></button>
+<script src="js/config.js"></script><script src="js/script.js"></script></body></html>
